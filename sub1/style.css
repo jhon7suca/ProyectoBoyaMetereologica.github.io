@@ -1,0 +1,236 @@
+/* Estilos Generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-color: #1a1a2e; /* Fondo oscuro */
+    color: #ffffff;
+}
+
+/* Encabezado */
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 80px;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: transparent;
+}
+
+header .logo {
+    color: #ffffff;
+    font-size: 1.8em;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+/* Contenedor Principal */
+#contenedor-principal {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 3rem;
+    margin: 3rem auto;
+    max-width: 1100px;
+    padding: 2rem;
+    border-radius: 15px;
+    background: rgba(26, 26, 46, 0.8);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(10px);
+}
+
+/* Imagen de la Boya */
+#imagen-boya {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#imagen-boya img {
+    margin-bottom: 20px;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Contenedor de las Boyas */
+#contenedor-boyas {
+    flex: 2;
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+    flex-wrap: nowrap;
+}
+
+/* Estilos de las Boyas */
+#boya1, #boya2 {
+    background-color: rgba(45, 45, 78, 0.8);
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    width: 100%;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#boya1:hover, #boya2:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+#boya1 h2, #boya2 h2 {
+    text-align: center;
+    color: #fff;
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+
+/* Medidores */
+.medidores {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+
+.medidor {
+    background-color: #7a58ff; /* Color morado de fondo */
+    padding: 1.2rem;
+    border-radius: 8px;
+    text-align: center;
+    color: #ffffff;
+    font-size: 1.1rem;
+    transition: background-color 0.3s ease;
+}
+
+.medidor:hover {
+    background-color: #5b3db5; /* Morado más oscuro al hacer hover */
+}
+
+/* Tablas de Datos */
+#tabla-boya1, #tabla-boya2 {
+    margin-top: 2rem;
+    background-color: rgba(45, 45, 78, 0.8);
+    padding: 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.3);
+}
+
+#tabla-boya1 h2, #tabla-boya2 h2 {
+    color: #fff;
+    text-align: center;
+    font-size: 1.4rem;
+}
+
+.content-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.content-table th, .content-table td {
+    padding: 0.7rem;
+    text-align: center;
+    color: #ffffff;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.content-table th {
+    background-color: #7a58ff;
+    color: #ffffff;
+}
+
+.content-table tbody tr:hover {
+    background-color: rgba(50, 50, 80, 0.8);
+}
+
+/* Caja Negra */
+.caja-negra {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #2d2d4e;
+    padding: 20px;
+    border-radius: 12px;
+    color: #ffffff;
+    width: 250px;
+    text-align: center;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+}
+
+.caja-negra h2 {
+    color: #58ffb2; /* Verde brillante */
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+}
+
+/* Indicadores de Seguridad */
+.indicador {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 0.8rem;
+}
+
+.indicador h3 {
+    font-size: 1rem;
+    color: #58ffb2; /* Verde brillante */
+    margin-right: 0.8rem;
+}
+
+/* Círculo de Estado */
+.circle {
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background-color: #7a58ff;
+}
+
+/* Pie de Página */
+footer {
+    background-color: rgba(45, 45, 78, 0.8);
+    padding: 1.2rem;
+    text-align: center;
+    color: #ffffff;
+    font-size: 0.9rem;
+    border-top: 1px solid #ffffff;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    #contenedor-principal {
+        flex-direction: column;
+        align-items: center;
+        padding: 1.5rem;
+    }
+
+    #imagen-boya {
+        order: -1;
+        width: 100%;
+    }
+
+    #contenedor-boyas {
+        flex-direction: column;
+        align-items: center;
+        gap: 1.5rem;
+        width: 100%;
+    }
+
+    #boya1, #boya2, .caja-negra {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        gap: 0.8rem;
+    }
+}

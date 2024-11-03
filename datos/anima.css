@@ -1,0 +1,171 @@
+/* Estilos generales */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #000000, #1e3a8a, #003cffc5); /* Fondo dinámico en múltiples tonos */
+    margin: 0;
+    padding: 0;
+    color: #f0f0f0; /* Color del texto por defecto */
+}
+
+/* Encabezado */
+header {
+    background: linear-gradient(135deg, #000000, #0062ff); /* Fondo degradado del encabezado */
+    padding: 1rem;
+    color: #facc15; /* Color del texto en el encabezado (amarillo vibrante) */
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 2rem;
+}
+
+nav ul li a {
+    color: #ffedd5; /* Color del texto de los enlaces (crema) */
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #14b8a6; /* Color del enlace al pasar el mouse (turquesa) */
+}
+
+/* Estilos para tablas */
+#tabla-boya1, #tabla-boya2 {
+    margin-top: 2rem;
+    background: linear-gradient(135deg, #1e3a8a, #10b981); /* Fondo degradado para las tablas */
+    padding: 1rem;
+    border-radius: 10px;
+}
+
+.content-table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #25292c; /* Mantener el fondo oscuro */
+}
+
+.content-table th, .content-table td {
+    padding: 0.5rem;
+    text-align: center;
+    color: #f0f0f0; /* Color del texto de las celdas */
+    border-bottom: 1px solid #ddd;
+}
+
+.content-table th {
+    background: #1e3a8a; /* Fondo degradado para los encabezados */
+}
+
+.content-table tbody tr {
+    background-color: #27577c; /* Color de fondo de las filas por defecto */
+}
+
+.content-table tbody tr:hover {
+    background-color: #0062ff; /* Color de fondo al pasar el mouse sobre las filas */
+    color: #ffffff; /* Color de texto al pasar el mouse (opcional) */
+}
+
+
+/* Botón de descarga */
+button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #45a049; /* Color de fondo del botón al pasar el mouse */
+}
+
+/* Pie de página */
+footer {
+    background-color: #12223d; /* Mantener fondo oscuro del pie de página */
+    color: #f9fafb; /* Color del texto en el pie de página */
+    text-align: center;
+    padding: 1rem;
+    position: relative;
+}
+
+footer a {
+    color: #64ffda; /* Color de los enlaces en el pie de página */
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+footer a:hover {
+    color: #ffdd57; /* Color del enlace al pasar el mouse (amarillo) */
+}
+
+/* Media Queries */
+@media (min-width: 1025px) {
+    body {
+        font-size: 18px; /* Aumentar el tamaño de la fuente en pantallas grandes */
+    }
+
+    #contenedor-principal {
+        flex-direction: row;
+        gap: 4rem;
+    }
+
+    #boya1, #boya2 {
+        width: 45%; /* Ancho para boyas en pantallas grandes */
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    body {
+        font-size: 16px; /* Tamaño de fuente para pantallas medianas */
+    }
+
+    #contenedor-principal {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #boya1, #boya2 {
+        width: 80%; /* Ancho para boyas en pantallas medianas */
+    }
+
+    .caja-negra {
+        width: 90%;
+    }
+}
+
+@media (max-width: 767px) {
+    body {
+        font-size: 14px; /* Tamaño de fuente para pantallas pequeñas */
+    }
+
+    #contenedor-principal {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #boya1, #boya2 {
+        width: 100%; /* Ancho completo para boyas en pantallas pequeñas */
+        margin-bottom: 1rem;
+    }
+
+    .caja-negra {
+        width: 95%;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center; /* Alinear elementos del menú en pantallas pequeñas */
+    }
+
+    .boton-regresar {
+        width: 90%;
+    }
+}

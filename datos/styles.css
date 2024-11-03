@@ -1,0 +1,345 @@
+/* Estilos generales */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #1c1e22; /* Fondo oscuro */
+    margin: 0;
+    padding: 0;
+    color: #ffffff; /* Texto blanco */
+}
+
+/* Estilo del encabezado */
+header {
+    background-color: #2a2d34; /* Fondo oscuro para el encabezado */
+    padding: 1rem;
+    color: #ffffff;
+    text-align: center;
+}
+
+.header-container {
+    text-align: center;
+    border-radius: 10px;
+}
+
+/* Estilo del título */
+.header-container h1 {
+    color: #ffffff;
+    margin: 0;
+    font-size: 3rem;
+}
+
+/* Estilo de la navegación */
+nav {
+    margin-top: 0.5rem;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 2rem;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #b3b3b3; /* Efecto hover */
+}
+
+/* Contenedor principal */
+#contenedor-principal {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 3rem;
+    margin: 2rem auto;
+    max-width: 1200px;
+    background-color: #2a2d34; /* Fondo oscuro para las tarjetas */
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+}
+
+/* Imagen de la boya */
+#imagen-boya {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#imagen-boya img {
+    margin-bottom: 20px;
+}
+
+/* Contenedor de las boyas */
+#contenedor-boyas {
+    flex: 2;
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+    flex-wrap: nowrap;
+}
+
+/* Estilos de las boyas */
+#boya1, #boya2 {
+    background-color: #1c1e22; /* Fondo oscuro */
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    width: 100%;
+    transition: transform 0.2s ease;
+}
+
+#boya1:hover, #boya2:hover {
+    transform: translateY(-10px);
+}
+
+#boya1 h2, #boya2 h2 {
+    text-align: center;
+    color: #ffffff;
+}
+
+/* Estilo de los medidores */
+.medidores {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+
+.medidor {
+    background-color: #2a2d34; /* Fondo oscuro */
+    padding: 1rem;
+    border-radius: 5px;
+    text-align: center;
+}
+
+/* Caja negra */
+.caja-negra {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #1c1e22;
+    padding: 20px;
+    border-radius: 10px;
+    color: #ffffff;
+    width: 300px;
+    text-align: center;
+    letter-spacing: 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.caja-negra h2 {
+    color: #ffffff;
+    font-size: 1rem;
+    margin-bottom: 0.8rem;
+}
+
+.caja-negra p, .indicador h3, .indicador p {
+    font-size: 0.9rem;
+}
+
+/* Indicadores de seguridad */
+.indicador {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 0.1rem;
+}
+
+.indicador h3 {
+    font-size: 0.8rem;
+    color: #ffffff;
+    margin-right: 0.5rem;
+}
+
+/* Estilos para el círculo */
+.circle {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: #ffffff;
+}
+
+/* Colores de los niveles de seguridad */
+.seguro {
+    color: #00ff00;
+}
+
+.medianamente-seguro {
+    color: #ffd700;
+}
+
+.inseguro {
+    color: #ff0000;
+}
+
+/* Estilos de pie de página */
+footer {
+    background-color: #2a2d34;
+    color: #ffffff;
+    text-align: center;
+    padding: 1rem;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Estilo para el botón de descarga */
+button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 10px 2px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* Tablas de datos */
+#tabla-boya1, #tabla-boya2 {
+    margin-top: 2rem; /* Margen superior de 2 rem para separar la tabla del contenido superior */
+    background-color: #2d3438; /* Color de fondo azul para las tablas */
+    padding: 1rem; /* Relleno interno de 1 rem para dar espacio alrededor del contenido */
+    border-radius: 10px; /* Bordes redondeados de 10px para suavizar la apariencia */
+}
+
+/* Estilo de los encabezados de las tablas */
+#tabla-boya1 h2, #tabla-boya2 h2 {
+    color: #ffffff; /* Color del texto amarillo brillante para los encabezados */
+    text-align: center; /* Centrar el texto del encabezado */
+}
+
+/* Estilos de las tablas en general */
+.content-table {
+    width: 100%; /* Ancho de la tabla al 100% del contenedor */
+    border-collapse: collapse; /* Colapsar bordes para evitar espacio entre celdas */
+    background-color: #25292c;
+}
+
+/* Estilos para celdas y encabezados de las tablas */
+.content-table th, .content-table td {
+    padding: 0.5rem; /* Relleno interno de 0.5 rem para dar espacio alrededor del contenido de las celdas */
+    text-align: center; /* Centrar el texto dentro de las celdas */
+    color: #fffafa; /* Color del texto blanco (casi blanco) para las celdas */
+    border-bottom: 1px solid #ddd; /* Línea inferior ligera para separar las filas */
+}
+
+/* Estilo de las celdas del encabezado */
+.content-table th {
+    background-color: #000000; /* Color de fondo azul más vibrante para las celdas del encabezado */
+}
+
+/* Estilo para el efecto hover en las filas del cuerpo de la tabla */
+.content-table tbody tr:hover {
+    background-color: #000000; /* Color de fondo azul claro para resaltar la fila al pasar el ratón */
+}
+
+
+/* Media Queries */
+@media (max-width: 768px) {
+    #contenedor-principal {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #imagen-boya {
+        order: -1;
+        width: 100%;
+    }
+
+    #contenedor-boyas {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+        width: 100%;
+    }
+
+    #boya1, #boya2, .caja-negra {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        gap: 0.5rem;
+    }
+}
+
+@media (min-width: 1025px) {
+    body {
+        font-size: 18px;
+    }
+
+    #contenedor-principal {
+        flex-direction: row;
+        gap: 4rem;
+    }
+
+    #boya1, #boya2 {
+        width: 45%;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    body {
+        font-size: 16px;
+    }
+
+    #contenedor-principal {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #boya1, #boya2 {
+        width: 80%;
+    }
+
+    .caja-negra {
+        width: 90%;
+    }
+}
+
+@media (max-width: 767px) {
+    body {
+        font-size: 14px;
+    }
+
+    #contenedor-principal {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #boya1, #boya2 {
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+
+    .caja-negra {
+        width: 95%;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .boton-regresar {
+        width: 90%;
+    }
+}

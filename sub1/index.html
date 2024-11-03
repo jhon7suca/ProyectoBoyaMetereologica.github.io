@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Datos de Boyas Climáticas</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Segoe+UI:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Encabezado -->
+    <header>
+        <h1>Monitoreo Climático con Boyas</h1>
+        <nav>
+            <a href="datos.html">Ver Datos Registrados</a>
+        </nav>
+    </header>
+    
+    <main>
+        <!-- Contenedor principal para datos de las boyas -->
+        <section id="contenedor-principal">
+            <div class="contenedor-izquierda">
+                <!-- Imagen de la boya en GIF -->
+                <div id="imagen-boya">
+                    <img src="200287-18995769-removebg-preview.gif" alt="Boya GIF" width="250" height="250">
+                </div>
+
+                <!-- Caja negra con indicadores de seguridad -->
+                <div class="caja-negra">
+                    <h2>Indicadores de Seguridad Boya 1</h2>
+                    <!-- Indicadores individuales para cada parámetro -->
+                    <div class="indicador">
+                        <h3>Temperatura</h3>
+                        <span class="circle temperatura1"></span>
+                    </div>
+                    <div class="indicador">
+                        <h3>Presión</h3>
+                        <span class="circle presion1"></span>
+                    </div>
+                    <div class="indicador">
+                        <h3>Altitud</h3>
+                        <span class="circle altitud1"></span>
+                    </div>
+                    <div class="indicador">
+                        <h3>Humedad Relativa</h3>
+                        <span class="circle humedad1"></span>
+                    </div>
+
+                    <h2>Indicadores de Seguridad Boya 2</h2>
+                    <!-- Indicadores para Boya 2 -->
+                    <div class="indicador">
+                        <h3>Temperatura</h3>
+                        <span class="circle temperatura2"></span>
+                    </div>
+                    <div class="indicador">
+                        <h3>Presión</h3>
+                        <span class="circle presion2"></span>
+                    </div>
+                    <div class="indicador">
+                        <h3>Altitud</h3>
+                        <span class="circle altitud2"></span>
+                    </div>
+                    <div class="indicador">
+                        <h3>Humedad Relativa</h3>
+                        <span class="circle humedad2"></span>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Panel de datos para Boya 1 y Boya 2 -->
+            <div id="contenedor-boyas">
+                <!-- Columna de Boya 1 -->
+                <div id="boya1" class="zona">
+                    <h2>Boya 1</h2>
+                    <div class="medidores">
+                        <!-- Datos individuales de Boya 1 -->
+                        <div class="medidor">
+                            <h3>Temperatura</h3>
+                            <h1 id="temperatura-valor1">-- °C</h1>
+                        </div>
+                        <div class="medidor">
+                            <h3>Presión</h3>
+                            <h1 id="presion-valor1">-- hPa</h1>
+                        </div>
+                        <div class="medidor">
+                            <h3>Altitud</h3>
+                            <h1 id="altitud-valor1">-- m</h1>
+                        </div>
+                        <div class="medidor">
+                            <h3>Humedad</h3>
+                            <h1 id="humedad-valor1">-- %</h1>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Columna de Boya 2 -->
+                <div id="boya2" class="zona">
+                    <h2>Boya 2</h2>
+                    <div class="medidores">
+                        <!-- Datos individuales de Boya 2 -->
+                        <div class="medidor">
+                            <h3>Temperatura</h3>
+                            <h1 id="temperatura-valor2">-- °C</h1>
+                        </div>
+                        <div class="medidor">
+                            <h3>Presión</h3>
+                            <h1 id="presion-valor2">-- hPa</h1>
+                        </div>
+                        <div class="medidor">
+                            <h3>Altitud</h3>
+                            <h1 id="altitud-valor2">-- m</h1>
+                        </div>
+                        <div class="medidor">
+                            <h3>Humedad</h3>
+                            <h1 id="humedad-valor2">-- %</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Tabla de datos registrados para Boya 1 y Boya 2 -->
+        <section id="batabase">
+            <h1>Datos Registrados</h1>
+        
+            <!-- Tabla para Boya 1 -->
+            <div id="tabla-boya1">
+                <h2>Boya 1</h2>
+                <table class="content-table">
+                    <thead>
+                        <tr>
+                            <th>Temperatura (°C)</th>
+                            <th>Presión (hPa)</th>
+                            <th>Altura (m)</th>
+                            <th>Humedad (%)</th>
+                            <th>Fecha y Hora</th>
+                        </tr>
+                    </thead>
+                    <tbody id="data-table-boya1">
+                        <!-- Filas de datos se insertarán dinámicamente aquí -->
+                    </tbody>
+                </table>
+            </div>
+        
+            <!-- Tabla para Boya 2 -->
+            <div id="tabla-boya2">
+                <h2>Boya 2</h2>
+                <table class="content-table">
+                    <thead>
+                        <tr>
+                            <th>Temperatura (°C)</th>
+                            <th>Presión (hPa)</th>
+                            <th>Altura (m)</th>
+                            <th>Humedad (%)</th>
+                            <th>Fecha y Hora</th>
+                        </tr>
+                    </thead>
+                    <tbody id="data-table-boya2">
+                        <!-- Filas de datos para Boya 2 -->
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+
+    <!-- Pie de página -->
+    <footer>
+        <p>© 2024 Monitoreo Climático. Todos los derechos reservados.</p>
+    </footer>
+    <script src="app.js"></script>
+</body>
+</html>

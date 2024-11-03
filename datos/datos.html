@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Datos Registrados</title>
+    <link rel="stylesheet" href="anima.css">
+</head>
+<body>
+    <header>
+        <h1>Datos Registrados</h1>
+        <nav>
+            <ul>
+                <div class="header-container"><!-- Contenedor para el encabezado -->
+                    <li><a href="../index.html">Inicio</a></li>
+                </div>
+                <div class="header-container"><!-- Contenedor para el encabezado -->
+                    <li><a href="./index.html">Datos en Tiempo real</a></li>
+                </div>
+                <div class="header-container"><!-- Contenedor para el encabezado -->
+                    <li><a href="../proyecto/index.html">Sobre el Proyecto</a></li>
+                </div>
+                <div class="header-container"><!-- Contenedor para el encabezado -->
+                    <li><a href="../contacto/index.hyml">Contacto</a></li>
+                </div>
+            </ul>
+        </nav>
+</header>
+    <!-- Tabla de datos registrados para Boya 1 y Boya 2 -->
+    <section id="batabase">
+    
+        <!-- Tabla para Boya 1 -->
+        <div id="tabla-boya1">
+            <h2>Boya 1</h2>
+            <table class="content-table">
+                <thead>
+                    <tr>
+                        <th>Temperatura (°C)</th>
+                        <th>Presión (hPa)</th>
+                        <th>Altura (m)</th>
+                        <th>Humedad (%)</th>
+                        <th>Fecha y Hora</th>
+                    </tr>
+                </thead>
+                <tbody id="data-table-boya1">
+                    <!-- Filas de datos se insertarán dinámicamente aquí -->
+                </tbody>
+            </table>
+        </div>
+    
+        <!-- Tabla para Boya 2 -->
+        <div id="tabla-boya2">
+            <h2>Boya 2</h2>
+            <table class="content-table">
+                <thead>
+                    <tr>
+                        <th>Temperatura (°C)</th>
+                        <th>Presión (hPa)</th>
+                        <th>Altura (m)</th>
+                        <th>Humedad (%)</th>
+                        <th>Fecha y Hora</th>
+                    </tr>
+                </thead>
+                <tbody id="data-table-boya2">
+                    <!-- Filas de datos para Boya 2 -->
+                </tbody>
+            </table>
+        </div>
+    </section>
+    <!-- Botón de descarga de datos -->
+    
+    <button onclick="descargarDatosCSV(last5Boyas)">Descargar Datos</button>
+
+    <script src="app1.js"></script>
+</body>
+</html>

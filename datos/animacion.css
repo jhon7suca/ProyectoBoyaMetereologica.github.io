@@ -1,0 +1,340 @@
+/* Estilos generales para el cuerpo de la página */
+body {
+    font-family: 'Poppins', sans-serif; /* Fuente utilizada en el cuerpo */
+    background: linear-gradient(135deg, #000000, #1e3a8a, #003cffc5); /* Fondo dinámico en múltiples tonos */
+    margin: 0; /* Elimina margen predeterminado */
+    padding: 0; /* Elimina padding predeterminado */
+    color: #f0f0f0; /* Color del texto por defecto */
+}
+
+/* Estilo del encabezado */
+header {
+    background: linear-gradient(135deg, #000000, #0062ff); /* Fondo degradado del encabezado */
+    padding: 1rem; /* Espaciado interno del encabezado */
+    color: #facc15; /* Color del texto en el encabezado (amarillo vibrante) */
+    text-align: center; /* Centra el texto en el encabezado */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Sombra en el encabezado para darle profundidad */
+}
+
+.header-container {
+    text-align: center; /* Centra el contenido dentro del contenedor del encabezado */
+    border-radius: 10px; /* Bordes redondeados para el contenedor del encabezado */
+}
+
+.header-container h1 {
+    color: #ff9100; /* Tono crema para el título */
+    font-size: 3rem; /* Tamaño de la fuente del título */
+    margin: 0; /* Elimina margen predeterminado del título */
+    text-shadow: 2px 2px #9333ea; /* Sombra en el texto del título para darle efecto */
+}
+
+/* Estilo de la navegación */
+nav ul {
+    list-style: none; /* Elimina viñetas de la lista */
+    padding: 0; /* Elimina padding predeterminado */
+    display: flex; /* Muestra los elementos de la lista en línea */
+    justify-content: center; /* Centra los elementos de la lista horizontalmente */
+}
+
+nav ul li {
+    margin: 0 2rem; /* Espaciado entre los elementos de la lista */
+}
+
+nav ul li a {
+    color: #ffedd5; /* Color del texto de los enlaces (crema) */
+    text-decoration: none; /* Elimina subrayado de los enlaces */
+    transition: color 0.3s; /* Transición suave al cambiar el color del enlace */
+}
+
+nav ul li a:hover {
+    color: #14b8a6; /* Color del enlace al pasar el mouse (turquesa) */
+}
+
+/* Contenedor principal de la página */
+#contenedor-principal {
+    display: flex; /* Utiliza flexbox para la distribución de elementos */
+    flex-direction: row; /* Disposición horizontal de los elementos */
+    justify-content: flex-start; /* Alinea los elementos al inicio del contenedor */
+    align-items: flex-start; /* Alinea los elementos al inicio del contenedor verticalmente */
+    gap: 3rem; /* Espaciado entre elementos */
+    margin: 3rem 5rem; /* Margen superior e inferior de 2rem, centrado horizontalmente */
+    max-width: 1200px; /* Ancho máximo del contenedor */
+    background: linear-gradient(135deg, #51709c, #3b82f6); /* Fondo degradado para el contenedor principal */
+    padding: 2rem; /* Espaciado interno del contenedor principal */
+    border-radius: 15px; /* Bordes redondeados para el contenedor */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.7); /* Sombra en el contenedor principal para darle profundidad */
+}
+
+/* Imagen de la boya */
+#imagen-boya {
+    flex: 1; /* Permite que el contenedor de la imagen crezca */
+    display: flex; /* Utiliza flexbox para centrar la imagen */
+    justify-content: center; /* Centra la imagen horizontalmente */
+    align-items: center; /* Centra la imagen verticalmente */
+}
+
+#imagen-boya img {
+    margin-bottom: 20px; /* Margen inferior para la imagen */
+}
+
+/* Contenedor de las boyas */
+#contenedor-boyas {
+    flex: 2; /* Permite que el contenedor de las boyas crezca más que el de la imagen */
+    display: flex; /* Utiliza flexbox para la distribución de boyas */
+    justify-content: space-between; /* Distribuye las boyas con espacio entre ellas */
+    gap: 2rem; /* Espaciado entre las boyas */
+}
+
+/* Estilos de las boyas */
+#boya1, #boya2 {
+    background: linear-gradient(135deg, #000000, #0059ff); /* Fondo degradado para las boyas */
+    padding: 1.5rem; /* Espaciado interno de las boyas */
+    border-radius: 10px; /* Bordes redondeados para las boyas */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4); /* Sombra en las boyas para profundidad */
+    transition: transform 0.2s ease, background-color 0.3s ease; /* Transiciones suaves al interactuar */
+}
+
+#boya1:hover, #boya2:hover {
+    transform: translateY(-10px); /* Desplaza la boya hacia arriba al pasar el mouse */
+    background: #00245f; /* Cambia el color de fondo al pasar el mouse */
+}
+
+#boya1 h2, #boya2 h2 {
+    text-align: center; /* Centra el texto del título de las boyas */
+    color: #ffe600; /* Color del texto del título de las boyas */
+}
+
+/* Estilo de los medidores */
+.medidores {
+    display: grid; /* Utiliza grid para la disposición de medidores */
+    grid-template-columns: 1fr; /* Una columna para los medidores */
+    gap: 1rem; /* Espaciado entre medidores */
+}
+
+.medidor {
+    background-color: #043375; /* Color de fondo de los medidores */
+    padding: 1rem; /* Espaciado interno de los medidores */
+    border-radius: 5px; /* Bordes redondeados para los medidores */
+    text-align: center; /* Centra el texto dentro de los medidores */
+}
+
+/* Caja negra para información */
+.caja-negra {
+    background: linear-gradient(135deg, #1e3a8a, #10b981); /* Fondo degradado para la caja negra */
+    padding: 20px; /* Espaciado interno de la caja negra */
+    border-radius: 10px; /* Bordes redondeados para la caja negra */
+    color: #f9fafb; /* Color del texto en la caja negra */
+    width: 300px; /* Ancho fijo para la caja negra */
+    text-align: center; /* Centra el texto dentro de la caja negra */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Sombra en la caja negra para profundidad */
+}
+
+.caja-negra h2 {
+    color: #facc15; /* Color del título en la caja negra */
+    font-size: 1rem; /* Tamaño de la fuente del título en la caja negra */
+    margin-bottom: 0.8rem; /* Margen inferior del título */
+}
+
+.caja-negra p, .indicador h3, .indicador p {
+    font-size: 0.9rem; /* Tamaño de fuente para párrafos y encabezados dentro de la caja negra y los indicadores */
+}
+
+/* Indicadores de seguridad */
+.indicador {
+    display: flex; /* Utiliza flexbox para la distribución de indicadores */
+    align-items: center; /* Alinea los elementos verticalmente */
+    justify-content: space-between; /* Distribuye los elementos con espacio entre ellos */
+    margin-bottom: 0.1rem; /* Margen inferior para separar indicadores */
+}
+
+.indicador h3 {
+    font-size: 0.8rem; /* Tamaño de fuente para el encabezado del indicador */
+    color: #f9fafb; /* Color del texto del encabezado del indicador */
+    margin-right: 0.5rem; /* Margen derecho del encabezado del indicador */
+}
+
+/* Estilo para el círculo que indica el estado de seguridad */
+.circle {
+    display: inline-block; /* Hace que el círculo sea un bloque en línea */
+    width: 15px; /* Ancho del círculo */
+    height: 15px; /* Alto del círculo */
+    border-radius: 50%; /* Bordes redondeados para formar un círculo */
+    background-color: #ffffff; /* Color de fondo del círculo */
+}
+
+/* Colores para los estados de seguridad */
+.seguro { color: #10b981; } /* Color para estado seguro */
+.medianamente-seguro { color: #f59e0b; } /* Color para estado medianamente seguro */
+.inseguro { color: #ef4444; } /* Color para estado inseguro */
+
+/* Estilos de pie de página */
+footer {
+    background-color: #12223d; /* Color de fondo del pie de página */
+    color: #f9fafb; /* Color del texto en el pie de página */
+    text-align: center; /* Centra el texto en el pie de página */
+    padding: 1rem; /* Espaciado interno del pie de página */
+    position: absolute; /* Posición relativa para efectos de superposición */
+}
+
+footer p {
+    margin: 0; /* Elimina margen predeterminado del pie de página */
+}
+
+/* Estilo de los enlaces en el pie de página */
+footer a {
+    color: #64ffda; /* Color de los enlaces en el pie de página */
+    text-decoration: none; /* Elimina subrayado de los enlaces */
+    transition: color 0.3s; /* Transición suave al cambiar el color del enlace */
+}
+
+footer a:hover {
+    color: #ffdd57; /* Color del enlace al pasar el mouse (amarillo) */
+}
+/* Movimiento */
+
+
+.wrapper {
+	perspective: 900px;
+}
+.single-card {
+	text-align: center;
+	transition: all 1.5s cubic-bezier(0.7, -0.5, 0.3, 1.8);
+	transform-style: preserve-3d;
+}
+.wrapper:hover .single-card {
+	transform: rotateY(180deg);
+}
+.front, .back {
+	width: 300px;
+	position: relative;
+	top: 0;
+	left: 0;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
+.front {
+	cursor: pointer;
+	height: 100%;
+	background-image: url(1.jpg);
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+	border-radius: 50px;
+	background-size: cover;
+	background-position: center center;
+}
+.back {
+	transform: rotateY(180deg);
+	position: absolute;
+	border-radius: 50px;
+	height: 450px;
+	background: #fff;
+}
+.content {
+	padding-top: 25%;
+}
+.content h2 {
+	font-size: 35px;
+	margin: 0;
+	font-weight: 300;
+}
+.content h4 {
+	margin: 0;
+}
+.socials {
+	margin-top: 20%;
+}
+.socials i {
+	font-size: 30px;
+	margin: 0 10px;
+}
+
+
+/* Media Queries */
+@media (max-width: 768px) {
+    #contenedor-principal {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #imagen-boya {
+        order: -1;
+        width: 100%;
+    }
+
+    #contenedor-boyas {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+        width: 100%;
+    }
+
+    #boya1, #boya2, .caja-negra {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        gap: 0.5rem;
+    }
+}
+
+@media (min-width: 1025px) {
+    body {
+        font-size: 18px;
+    }
+
+    #contenedor-principal {
+        flex-direction: row;
+        gap: 4rem;
+    }
+
+    #boya1, #boya2 {
+        width: 45%;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    body {
+        font-size: 16px;
+    }
+
+    #contenedor-principal {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #boya1, #boya2 {
+        width: 80%;
+    }
+
+    .caja-negra {
+        width: 90%;
+    }
+}
+
+@media (max-width: 767px) {
+    body {
+        font-size: 14px;
+    }
+
+    #contenedor-principal {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #boya1, #boya2 {
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+
+    .caja-negra {
+        width: 95%;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .boton-regresar {
+        width: 90%;
+    }
+}
